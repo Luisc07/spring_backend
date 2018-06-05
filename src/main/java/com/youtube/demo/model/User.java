@@ -26,13 +26,13 @@ private String secondName;
 @Column(name = "first_surname", nullable = false, length = 255)	
 private String firstSurname; 
 
-@Column(name = "second_surename", nullable = true, length = 255)	
-private String secondSurename; 
+@Column(name = "second_surname", nullable = true, length = 255)	
+private String secondSurname; 
 
-@Column(name = "phone", nullable = true, length = 255)	
+@Column(name = "phone", nullable = true, length = 30)	
 private String phone; 
 
-@Column(name = "address", nullable = false, length = 255)	
+@Column(name = "address", nullable = false, length = 150)	
 private String address;
 
 
@@ -60,12 +60,12 @@ public void setFirstSurname(String firstSurname) {
 	this.firstSurname = firstSurname;
 }
 
-public String getSecondSurename() {
-	return secondSurename;
+public String getSecondSurname() {
+	return secondSurname;
 }
 
-public void setSecondSurename(String secondSurename) {
-	this.secondSurename = secondSurename;
+public void setSecondSurname(String secondSurname) {
+	this.secondSurname = secondSurname;
 }
 
 public String getPhone() {
